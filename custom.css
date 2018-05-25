@@ -1,0 +1,47 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+/* Please note that this is a generated css file courtesy of dunovan's jupyter themes package found here: https://github.com/dunovank/jupyter-themes */
+
+/*This is a customisation of the above package's custom generated css file, so make sure that you either generate a custom style sheet, or simply make a new one from scratch for any customisations. Since I prefer to use much of the notebook interface and UI in default settings, you won't see anything new here, except the code font changed to fira code to display more human readable code inspired by mathematical notations that we use every day and some font rendering and minor changes to code cell background. */
+
+/* Change code font */
+@font-face {
+  font-family: 'Fira Code';
+  src: url("https://cdn.rawgit.com/dunovank/jupyter-themes/1e851888/jupyterthemes/fonts/monospace/firacode/firacode.otf") format("opentype");
+}
+
+.CodeMirror pre, .CodeMirror-search-field{
+  font-family: 'Fira Code';
+  font-variant-ligatures: initial;
+  font-size: 10.5pt;
+}
+
+.cm-string {
+  font-variant-ligatures: none;
+}
+
+/* Change code cell background */
+div.input_area {
+  background: whitesmoke;
+}
+
+/* Change rendered font */
+div.text_cell_render {
+  font-family: 'Helvetica Neue';
+  font-size: 11pt;
+}
+
+/* Change markdown code editing font */
+.text_cell .CodeMirror pre {
+  font-family: 'Consolas', monospace;
+  font-size: 11pt;
+}
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
