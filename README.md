@@ -1,1 +1,1 @@
-### Customised style sheet for Jupyter notebookk. Inspired by Dunovank's themes
+### Customised style sheet for Jupyter notebook. Inspired by Dunovank's themes
