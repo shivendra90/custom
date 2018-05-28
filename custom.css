@@ -13,14 +13,16 @@ rendering and minor changes to code cell background. */
 
 /* Change code font */
 @font-face {
-  font-family: 'Fira Code';
-  src: url("https://cdn.rawgit.com/dunovank/jupyter-themes/1e851888/jupyterthemes/fonts/monospace/firacode/firacode.otf") format("opentype");
+  font-family: '';
+  src: url("") format("opentype");
 }
 
-.CodeMirror pre, .CodeMirror-search-field{
-  font-family: 'Fira Code';
-  font-variant-ligatures: initial;
-  font-size: 10.5pt;
+.CodeMirror pre {
+  font-family: 'Lucida Console';
+  font-style: normal;
+  font-weight: normal;
+  font-variant-ligatures: normal;
+  font-size:;
 }
 
 .cm-string {
@@ -42,6 +44,33 @@ div.text_cell_render {
 .text_cell .CodeMirror pre {
   font-family: 'Consolas', monospace;
   font-size: 11pt;
+}
+
+.CodeMirror span.cm-comment {
+  color: #108001;
+  opacity: 1.00;}
+
+.CodeMirror span.cm-string {
+  color: #cc3300;
+  }
+
+.CodeMirror span.cm-keyword {
+  color: #0000ff;
+  font-weight: bold;
+  }
+
+.CodeMirror span.cm-builtin {
+  color: #900090;
+}
+
+.CodeMirror span.cm-def{
+  color: #000000
+  font-weight: bold;
+}
+
+.CodeMirror span.cm-instance {
+  color: #924900;
+  font-style: italic;
 }
 
 #ipython-main-app {
