@@ -78,6 +78,10 @@ div.text_cell_render {
   font-weight: bold;
 }
 
+.Codemirror span.cm-bool {
+  color: #996600;
+}
+
 #ipython-main-app {
     position: relative;
 }
